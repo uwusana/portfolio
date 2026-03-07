@@ -1,0 +1,95 @@
+/* scroll reveal */
+
+.reveal{
+
+opacity:0;
+transform:translateY(40px);
+transition:0.8s;
+
+}
+
+.reveal.active{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+/* tech hover */
+
+.tech{
+
+display:inline-block;
+margin:20px;
+transition:0.2s;
+position:relative;
+
+}
+
+.tech img{
+width:50px;
+}
+
+.tech:hover{
+transform:translateY(-8px);
+}
+
+.tech::after{
+
+content:attr(data-tech);
+position:absolute;
+left:30px;
+top:-10px;
+background:#111;
+color:white;
+padding:4px 8px;
+border-radius:6px;
+font-size:12px;
+opacity:0;
+transition:0.2s;
+
+}
+
+.tech:hover::after{
+opacity:1;
+}
+
+
+/* photo stack */
+
+.photo-stack{
+position:relative;
+width:260px;
+margin:auto;
+}
+
+.card{
+
+position:absolute;
+width:100%;
+border-radius:16px;
+transition:0.5s;
+
+}
+
+
+/* sparkle */
+
+.sparkle{
+
+position:absolute;
+width:6px;
+height:6px;
+background:pink;
+border-radius:50%;
+pointer-events:none;
+animation:sparkleAnim 0.6s linear;
+
+}
+
+@keyframes sparkleAnim{
+
+from{opacity:1; transform:scale(1);}
+to{opacity:0; transform:scale(0);}
+
+}

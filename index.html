@@ -1,80 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Upasana's Studio</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/hero.css">
+
 </head>
+
 <body>
-  <video autoplay loop muted plays-inline class="back-vid">
-    <source src="images/galaxy.mp4" type="video/mp4">
-  </video>
-  <section class="main-section">
-    <nav>
-      <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #4acfee;">Upa</span>sana</h1>
-      <ul>
-        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a class="active" href="#">Home </a></li>
-        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></li>
-        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Projects</a></li>
-        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Skills</a></li>
-        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Content</a></li>
-      </ul>
-    </nav>
 
-    <div class="hero">
-      <div class="hero-info">
-        <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">Hi, I'm Upasana</h1>
-        <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">I'm a  Developer</h2>
-        <p data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quas ducimus recusandae architecto at iste quisquam rerum reiciendis quo laudantium.</p>
-        <div class="Buttons">
-          <button class="btn" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="1100">Hire me</button> 
-          <ul class="ul-icons">
-            <li><a href="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200"><i class='bx bxl-github'></i></a></li>
-            <li><a href="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1300"><i class='bx bxl-twitter'></i></a></li>
-            <li><a href="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1400" ><i class='bx bxl-youtube'></i></a></li>
-            <li><a href="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500"><i class='bx bxl-facebook-circle'></i></a></li>
-          </ul>
+<!-- NAVBAR -->
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="assets/images/image.png" alt="logo" >
+    </div>
+
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <div class="hero-logo">
+            <img src="assets/images/main-logo.png" class="intro-logo">
         </div>
-      </div>
 
-      <div class="hero-img" data-aos="zoom-in-left" data-aos-duration="2500">
-        <img src="images/photo4.jpg" alt="person-img" >
-      </div>
+        <a href="assets/cv/Upasana_CV.pdf" download class="cv-button">
+        Download CV
+        </a>
+
+        <div class="stickers">
+            <img src="assets/images/stickers/bunny.png" class="sticker s1">
+
+            <img src="assets/images/stickers/smiski.png" class="sticker s2">
+
+            <img src="assets/images/stickers/miffy.png" class="sticker s3">
+
+            <img src="assets/images/stickers/cat.png" class="sticker s4">
+        </div>
     </div>
 
-    <div class="info-sec">
-      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1600">
-        <h3>JAVA</h3>
-        
-      </div>
-      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1700">
-        <h3>C</h3>
-        
-      </div>
-      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1800">
-        <h3>JAVASCRIPT</h3>
-        
-      </div>
-      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1900">
-        <h3>FIGMA</h3>
-      
-      </div>
-      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1800">
-        <h3>SPRINGBOOT</h3>
-        
-      </div>
-      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1800">
-        <h3>REACT</h3>
-        
-      </div>
-    </div>
-  </section>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    
+</section>
+
+<!-- image stack -->
+
+<div class="photo-stack">
+
+<img src="assets/images/photos/p1.jpg" class="card">
+<img src="assets/images/photos/p2.jpg" class="card">
+<img src="assets/images/photos/p3.jpg" class="card">
+
+</div>
+<!-- TECH STACK -->
+
+<section class="tech-section reveal">
+
+<div class="tech" data-tech="React">
+<img src="assets/images/tech/react.png">
+</div>
+
+<div class="tech" data-tech="JavaScript">
+<img src="assets/images/tech/js.png">
+</div>
+
+<div class="tech" data-tech="Java">
+<img src="assets/images/tech/java.png">
+</div>
+
+</section>
+
+
+<!-- PROJECTS (GAMEBOY) -->
+
+<section id="projects" class="reveal">
+
+<div class="gameboy">
+
+<img id="projectImage" src="assets/images/projects/project1.png">
+
+<div class="buttons">
+
+<button id="btnA">A</button>
+<button id="btnB">B</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<script src="js/main.js"></script>
+<script src="js/scrollReveal.js"></script>
+<script src="js/cursorSparkle.js"></script>
+<script src="js/imageStack.js"></script>
+<script src="js/gameboyProjects.js"></script>
+
 </body>
 </html>
