@@ -1,7 +1,16 @@
 #about{
     position:relative;
-    padding-top:300px;
+    padding-top:200px;
 }
+@font-face{
+    font-family: "Genty";
+    src: url("../assets/fonts/GentyDemo-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "RedditSans";
+    src: url("../assets/fonts/RedditSans-Regular.ttf") format("truetype");
+}
+
 .bg-style{
     position:absolute;
     top:120px;        /* spacing from top */
@@ -21,54 +30,125 @@
     position:relative;
     z-index:2;
 
-    max-width:1100px;
+    max-width:1300px;
     margin:auto;
 
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:80px;
+    gap:140px;
 }
 .stack{
-    flex:1;
+    flex:0.8;
     position:relative;
+    height:500px;
 }
 
 .stack-image{
-    width:220px;
+    width:500px;
     position:absolute;
+    transition:all 0.7s ease;
+}
+.stack-image:nth-child(1){
+    z-index:3;
+    transform:rotate(-4deg);
+}
+
+.stack-image:nth-child(2){
+    z-index:2;
+    transform:rotate(6deg);
+    left:10px;
+}
+
+.stack-image:nth-child(3){
+    z-index:1;
+    transform:rotate(-8deg);
+    left:20px;
+}
+
+.intro-text{
+    flex:1.4;
+    max-width:700px;
+    margin-left:40px;
+}
+
+.intro-text h3{
+    font-size:96px;
+    margin-bottom:20px;
+    font-family:"Genty";
+    color: #FEC0C1 ;
+    text-shadow:4px 4px 0px #7a2d2d;
 }
 
 
+.intro-text p{
+    font-family:"RedditSans";
+    line-height:1.6;
+    font-size:24px;
+    color: #761D1D;
+    text-align: justify;
+}
 
+@media (max-width:1024px){
+
+.about-content{
+    gap:80px;
+}
+
+.stack-image{
+    width:400px;
+}
+
+.intro-text h3{
+    font-size:72px;
+}
+
+.intro-text p{
+    font-size:20px;
+}
+
+}
 
 @media (max-width:768px){
+
+#about{
+    padding-top:150px;
+}
 
 .about-content{
     flex-direction:column;
     text-align:center;
+    gap:60px;
 }
 
 .stack{
-    margin-bottom:40px;
+    height:260px;
 }
 
-.bg-style{
-    width:95%;
+.stack-image{
+    width:260px;
 }
 
+.stack-image:nth-child(2){
+    left:20px;
+}
+
+.stack-image:nth-child(3){
+    left:40px;
 }
 
 .intro-text{
-    flex:1;
+    margin-left:0;
+    max-width:90%;
 }
 
 .intro-text h3{
-    font-size:32px;
-    margin-bottom:20px;
+    font-size:48px;
 }
 
 .intro-text p{
-    line-height:1.7;
-    font-size:16px;
+    font-size:18px;
+    text-align:center;
+}
+
 }

@@ -1,9 +1,9 @@
-const cards = document.querySelectorAll(".card");
+const stack = document.querySelector(".stack");
 
-setInterval(()=>{
+setInterval(() => {
 
-const first = cards[0];
+const first = stack.firstElementChild;
 
-first.parentNode.appendChild(first);
+stack.appendChild(first);
 
 },3000);
