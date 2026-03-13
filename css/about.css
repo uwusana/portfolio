@@ -1,6 +1,7 @@
 #about{
     position:relative;
     padding-top:200px;
+    background-color: #FFF6EB;
 }
 @font-face{
     font-family: "Genty";
@@ -24,6 +25,7 @@
 .bg-image{
     width:100%;
     display:block;
+    opacity: 0.6;
 }
 
 .about-content{
@@ -150,5 +152,5 @@
     font-size:18px;
     text-align:center;
 }
-
+ 
 }

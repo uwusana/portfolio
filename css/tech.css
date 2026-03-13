@@ -1,0 +1,142 @@
+#tech{
+    position:relative;
+    background-color: #FFF6EB;
+}
+@font-face{
+    font-family: "Genty";
+    src: url("../assets/fonts/GentyDemo-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "RedditSans";
+    src: url("../assets/fonts/RedditSans-Regular.ttf") format("truetype");
+}
+
+.tech-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    z-index:0;
+}
+
+.tech-bg-image{
+    width:100%;
+    display:block;
+    opacity: 0.6;
+}
+.tech-wrapper{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:120px;
+}
+.basket-area{
+position:relative;
+}
+
+.basket{
+width:500px;
+}
+.tools{
+position:absolute;
+inset:0;
+}
+.tool{
+position:absolute;
+width:70px;
+transition:0.25s;
+cursor:pointer;
+}
+
+/* Hover effect */
+.tool:hover{
+transform:translateY(-8px) scale(1.08);
+filter:drop-shadow(0 10px 15px rgba(0,0,0,0.25));
+}
+.tool::after{
+
+content:attr(data-name);
+
+position:absolute;
+left:80px;
+top:0;
+
+background:#111;
+color:white;
+padding:4px 8px;
+border-radius:6px;
+
+font-size:12px;
+opacity:0;
+transition:0.2s;
+
+white-space:nowrap;
+
+}
+
+.tool:hover::after{
+opacity:1;
+}
+
+.t1{ top:20%; left:15%; transform:rotate(-8deg); }
+.t2{ top:35%; left:40%; transform:rotate(12deg); }
+.t3{ top:15%; right:20%; transform:rotate(-6deg); }
+.t4{ top:55%; left:20%; transform:rotate(10deg); }
+.t5{ top:50%; right:18%; transform:rotate(-9deg); }
+.t6{ top:30%; right:35%; transform:rotate(5deg); }
+.t7{ top:65%; left:45%; transform:rotate(-7deg); }
+
+.notebook{
+position:relative;
+width:520px;
+height:380px;
+background:#fffdf6;
+border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+overflow:hidden;
+}
+.spiral{
+position:absolute;
+left:50%;
+top:0;
+bottom:0;
+width:24px;
+transform:translateX(-50%);
+
+background:
+repeating-linear-gradient(
+to bottom,
+#bbb 0px,
+#bbb 6px,
+transparent 6px,
+transparent 20px
+);
+}
+.pages{
+display:flex;
+height:100%;
+}
+
+.page{
+width:50%;
+padding:20px;
+position:relative;
+}
+.project-image{
+width:100%;
+border-radius:8px;
+
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+.project-image::before,
+.project-image::after{
+content:"";
+position:absolute;
+width:12px;
+height:12px;
+background:#e55;
+border-radius:50%;
+top:-6px;
+}
