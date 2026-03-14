@@ -94,7 +94,10 @@
 <div class="tech-bg">
     <img src="assets/images/tech-stack/tech-bg.png" alt="bg" class="tech-bg-image">
 </div>
-<h3>Tools & Projects</h3>
+<div class="tech-heading">
+    <h3>Tools & Projects</h3>
+</div>
+
 
 <div class="tech-wrapper">
 
@@ -133,6 +136,14 @@
                  class="tool t7"
                  data-name="CSS">
 
+            <img src="assets/images/tech-stack/springboot.png"
+                 class="tool t8"
+                 data-name="Spring Boot">
+
+            <img src="assets/images/tech-stack/mysql.png"
+                 class="tool t9"
+                 data-name="MySQL">
+
         </div>
 
     </div>
@@ -140,63 +151,34 @@
 
     <!-- 📓 NOTEBOOK PROJECT VIEWER -->
     <div class="notebook">
-
+        <div class="cover">
         <div class="spiral"></div>
 
         <div class="pages">
 
             <!-- LEFT PAGE -->
-            <div class="page left">
+            <div class="page left" data-side="left" id="leftPage">
 
-                <div class="project">
-
-                    <img src="assets/images/projects/p1.png"
-                         class="project-image">
-
-                    <h4>Project One</h4>
-
-                    <p>Short description goes here.</p>
-
-                    <div class="links">
-                        <a href="#" class="github">GitHub</a>
-                        <a href="#" class="live">Live</a>
-                    </div>
-
-                </div>
+                
 
             </div>
 
 
             <!-- RIGHT PAGE -->
-            <div class="page right">
+            <div class="page right" data-side="right" id="rightPage">
 
-                <div class="project">
-
-                    <img src="assets/images/projects/p2.png"
-                         class="project-image">
-
-                    <h4>Project Two</h4>
-
-                    <p>Another description goes here.</p>
-
-                    <div class="links">
-                        <a href="#" class="github">GitHub</a>
-                        <a href="#" class="live">Live</a>
-                    </div>
-
-                </div>
+                
 
             </div>
 
         </div>
 
     </div>
-
+    </div>
 </div>
 
 </section>
 
-<!-- PROJECTS (GAMEBOY) -->
 
 
 
@@ -205,7 +187,8 @@
 <script src="js/scrollReveal.js"></script>
 <script src="js/cursorSparkle.js"></script>
 <script src="js/imageStack.js"></script>
+<script src="js/pageflip.js"></script>
 <script src="js/gameboyProjects.js"></script>
-
+<script src="js/projects.js"></script>
 </body>
 </html>
