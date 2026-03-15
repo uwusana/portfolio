@@ -2,6 +2,10 @@
     position:relative;
     background-color: #FFF6EB;
 }
+
+.tech-section{
+    background-color: #FFF6EB;
+}
 @font-face{
     font-family: "Genty";
     src: url("../assets/fonts/GentyDemo-Regular.ttf") format("truetype");

@@ -4,15 +4,15 @@ const projects = [
   {
     title: "Savr",
     desc: "Gen Z financial literacy platform.",
-    img: "assets/images/projects/p1.png",
+    img: "assets/images/project-images/savr.jpg",
     github: "#",
     live: "#"
   },
   {
-    title: "Artire",
-    desc: "Artist hiring platform.",
+    title: "Tiny-Learners",
+    desc: "A cute flashcard styled learning app for kids.",
     img: "assets/images/projects/p2.png",
-    github: "#",
+    github: "https://github.com/uwusana/tiny-learners",
     live: "#"
   },
   {
@@ -26,7 +26,14 @@ const projects = [
     title: "Portfolio",
     desc: "This cute website 💅",
     img: "assets/images/projects/p4.png",
-    github: "#",
+    github: "https://github.com/uwusana/portfolio",
+    live: "#"
+  },
+  {
+    title: "Genshin Impact Encyclopedia",
+    desc: "Comprehensive guide for the game Genshin Impact.",
+    img: "assets/images/project-images/genshin.jpg",
+    github: "https://github.com/uwusana/genshin-encyclopedia",
     live: "#"
   }
 ];
